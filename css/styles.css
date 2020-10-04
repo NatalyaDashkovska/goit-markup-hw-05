@@ -78,11 +78,17 @@ body {
 
   padding-top: 16px;
   padding-bottom: 16px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-icon {
   fill: var(--text-colour);
   margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .link:hover .link-icon {
@@ -432,7 +438,7 @@ body {
 
   opacity: 1;
 
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -454,7 +460,7 @@ body {
 
   background-position: right top;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close {
@@ -478,6 +484,9 @@ body {
   color: var(--title-colour);
   margin-right: 8px;
   display: inline;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio .title {
@@ -613,6 +622,9 @@ body {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon-link:hover .social-icon {
@@ -675,41 +687,38 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.permanent-clients {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo5 {
   width: 45px;
-
-  fill: #afb1b8;
 }
 
-.permanent-clients .logo1 {
+.logo1 {
   width: 45px;
-
-  fill: #afb1b8;
 }
 
 .logo2 {
   width: 40px;
-
-  fill: #afb1b8;
 }
 
-.permanent-clients .logo3 {
+.logo3 {
   width: 41px;
-
-  fill: #afb1b8;
 }
 
 .logo4 {
   width: 80px;
-
-  fill: #afb1b8;
 }
 .logo6 {
   width: 89px;
-
-  fill: #afb1b8;
 }
 
 .permanent-clients-li:hover .permanent-clients {
